@@ -36,7 +36,47 @@ public class DrawingField {
 
     public Color getColor(int num){
         int lg = (int)(Math.log(num) / Math.log(2));
-        return new Color(100+lg*10,100+lg*10,100+lg*10);
+       lg = lg%12;
+       Color color = null;
+       switch (lg){
+           case 0:
+               color = new Color(201,79,103);
+               break;
+           case 1:
+               color = new Color(180,68,208);
+               break;
+           case 2:
+               color = new Color(79,81,144);
+               break;
+           case 3:
+               color = new Color(110,188,162);
+               break;
+           case 4:
+               color = new Color(102,195,111);
+               break;
+           case 5:
+               color = new Color(204,212,86);
+               break;
+           case 6:
+               color = new Color(204,212,86);
+               break;
+           case 7:
+               color = new Color(213,162,19);
+               break;
+           case 8:
+               color = new Color(213,162,19);
+               break;
+           case 9:
+               color = new Color(196,9,184);
+               break;
+           case 10:
+               color = new Color(50,105,69);
+               break;
+           case 11:
+               color = new Color(80,44,35);
+               break;
+       }
+       return color;
     }
 }
 

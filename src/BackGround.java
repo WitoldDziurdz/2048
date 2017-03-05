@@ -8,7 +8,7 @@ import java.awt.*;
 * The class is responsible for rendering the static parts of the application.
 * */
 public class BackGround {
-    Color color = Color.GREEN;
+    Color color = new Color(43,209,98);
     Color colorLine = Color.BLACK;
     public void draw(Graphics2D graphics2D)
     {
@@ -19,22 +19,23 @@ public class BackGround {
         int y1 = 0;
         int y2 = y1;
         int delta = GameSize.HEIGHT/4;
-        int numLines = 5;
+        int numLines = 4;
         for(int i = 0; i <numLines; i++) {
-            graphics2D.setColor(colorLine);
-            graphics2D.drawLine(x1,y1,x2,y2);
             y1 += delta;
             y2 += delta;
+            graphics2D.setColor(colorLine);
+            graphics2D.drawLine(x1,y1,x2,y2);
         }
         y1 = 0;
         y2 = GameSize.HEIGHT;
         x1 = 0;
         x2 = x1;
         for(int i = 0; i <numLines; i++) {
-            graphics2D.setColor(colorLine);
-            graphics2D.drawLine(x1,y1,x2,y2);
             x1 += delta;
             x2 += delta;
+            graphics2D.setColor(colorLine);
+            graphics2D.drawLine(x1,y1,x2,y2);
+
         }
     }
 }
