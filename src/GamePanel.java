@@ -15,6 +15,8 @@ public class GamePanel extends JPanel implements Runnable{
     private BufferedImage image = new BufferedImage(GameSize.WIDTH, GameSize.HEIGHT, BufferedImage.TYPE_INT_RGB);
     private Graphics2D graphics = (Graphics2D) image.getGraphics();
     private BackGround backGround = new BackGround();
+    private FielOfPlay fielOfPlay = new FielOfPlay();
+    DrawingField drawingField = new DrawingField(fielOfPlay);
 
     /*
     * Инициализация главного окна игры.
@@ -25,6 +27,7 @@ public class GamePanel extends JPanel implements Runnable{
         setPreferredSize(new Dimension(GameSize.WIDTH, GameSize.HEIGHT));
         setFocusable(true);
         requestFocus();
+        addKeyListener(new Listener(fielOfPlay));
     }
 
 
@@ -34,15 +37,10 @@ public class GamePanel extends JPanel implements Runnable{
      */
     @Override
     public void run() {
-        try
-        {
-            Thread.sleep(30);
-        } catch (InterruptedException e)
-        {
-            e.printStackTrace();
+        while (true) {
+            drawElementGame();
+            drawGame();
         }
-        drawElementGame();
-        drawGame();
     }
 
 
@@ -60,6 +58,7 @@ public class GamePanel extends JPanel implements Runnable{
     * */
     public void drawElementGame(){
         backGround.draw(graphics);
+        drawingField.draw(graphics);
     }
 
     /*

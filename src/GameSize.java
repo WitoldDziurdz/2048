@@ -7,6 +7,6 @@
 * The size of the main window of the game.
 * */
 public class GameSize {
-    public static int WIDTH = 401;
-    public static int HEIGHT = 401;
+    public final static int WIDTH = 400;
+    public final static int HEIGHT = 400;
 }
