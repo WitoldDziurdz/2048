@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d31f07e6-95b3-4c9f-b298-32b2a9aa573c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/2048/FielOfPlay.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/2048/Listener.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DrawingField.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FielOfPlay.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Listener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048/GamePanel.class" afterPath="$PROJECT_DIR$/out/production/2048/GamePanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048/GameSize.class" afterPath="$PROJECT_DIR$/out/production/2048/GameSize.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GamePanel.java" afterPath="$PROJECT_DIR$/src/GamePanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameSize.java" afterPath="$PROJECT_DIR$/src/GameSize.java" />
@@ -636,12 +639,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1488660057904</updated>
-      <workItem from="1488660061048" duration="11454000" />
+      <workItem from="1488660061048" duration="11507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11454000" />
+    <option name="totallyTimeSpent" value="11507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="372" y="116" width="1150" height="689" extended-state="0" />
