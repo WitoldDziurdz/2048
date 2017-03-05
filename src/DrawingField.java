@@ -29,6 +29,8 @@ public class DrawingField {
         Color color = getColor(num);
         graphics2D.setColor(color);
         graphics2D.fillRect(x,y,sizeX,sizeY);
+        Font font   = new Font("MS Serif", Font.BOLD, 25);
+        graphics2D.setFont(font);
         graphics2D.setColor(colorString);
         graphics2D.drawString(String.valueOf(num),x+sizeX/2,y+sizeY/2);
     }
