@@ -126,6 +126,7 @@ public class FielOfPlay {
         for(int i = 0; i <4; i++){
             for(int j =2; j>=0; j--) {
                 if(tab[i][j+1] == tab[i][j]){
+                    if(tab[i][j] != 0)move = true;
                     tab[i][j+1] += tab[i][j];
                     tab[i][j] = 0;
                 }
@@ -137,6 +138,7 @@ public class FielOfPlay {
         for(int i = 0; i <4; i++){
             for(int j =1; j<=3; j++) {
                 if(tab[i][j-1] == tab[i][j]){
+                    if(tab[i][j] != 0)move = true;
                     tab[i][j-1] += tab[i][j];
                     tab[i][j] = 0;
                 }
@@ -148,6 +150,7 @@ public class FielOfPlay {
         for(int i = 0; i <4; i++){
             for(int j =2; j>=0; j--) {
                 if(tab[j+1][i] == tab[j][i]){
+                    if(tab[i][j] != 0)move = true;
                     tab[j+1][i] += tab[j][i];
                     tab[j][i] = 0;
                 }
@@ -159,6 +162,7 @@ public class FielOfPlay {
         for(int i = 0; i <4; i++){
             for(int j =1; j<=3; j++) {
                 if(tab[j-1][i] == tab[j][i]){
+                    if(tab[i][j] != 0)move = true;;
                     tab[j-1][i] += tab[j][i];
                     tab[j][i] = 0;
                 }
